@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DoMage - Encyclopédie des runes de forgemagie</title>
+	<meta name="description" content="Découvrez DoMage, la référence en forgemagie : en un coup d'oeil, retrouvez le poids des runes dont vous avez besoin pour élaborer vos plus beaux items." />
+	<meta name="keywords" content="domage, dofus, sackey, rune, runes, fm, forgemagie, poids, overmax, puits, pa, ra, vi, ine, cha, age, fo, pui, per, pi, ga, pa, pme, invo, cri, so, po, tac, fui, pme, ini, pod, prospe, chasse, do, pou, feu, terre, eau, air, neutre, mé, di, ar" />
+	<link rel="icon" type="image/png" href="/picture/theme/icon.png" />
+	<link href="./style/domage.css" rel="stylesheet" />
+	<script src="./script/jquery.js"></script>
+	<script src="./script/domageClass.js"></script>
+	<script src="./script/domageData.js"></script>
+	<script src="./script/domageStruct.js"></script>
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-77271722-2', 'auto');
+		ga("send", {
+			hitType : "event",
+			eventCategory : "Page",
+			eventAction : "Show",
+			eventLabel : "DoMage"
+		});
+	</script>
+</head>
+
+<body>
+	<div id="DoMage">
+		<header>
+			<a href="http://dofensive.com/"></a>
+			<h1>DoMage</h1>
+			<div id="options">
+				<div><input type="checkbox" id="ckb_name" onclick="Change(this, 'name')" /> <label for="ckb_name">Afficher le nom</label></div>
+				<div><input type="checkbox" id="ckb_preview" onclick="Change(this, 'preview')" /> <label for="ckb_preview">Afficher l'image</label></div>
+				<div><input type="checkbox" id="ckb_optimal" onclick="Change(this, 'optimal')" /> <label for="ckb_optimal">Afficher l'overmax</label></div>
+			</div>
+		</header>
+
+		<section id="global"></section>
+
+		<script src="./script/domage.js"></script>
+	</div>
+</body>
+</html>

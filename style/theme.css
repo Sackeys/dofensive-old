@@ -1,0 +1,319 @@
+@media (max-width : 1000px) {
+	#Base header.main .toolbar,
+	#Base header.main .toolbar .langItem {
+		height : 60px !important;
+	}
+
+	#Base header.main .toolbar .langItem > div {
+		padding : 5px !important;
+	}
+
+	#Base header.main .toolbar .languages {
+		top : 60px !important;
+	}
+
+	#Base header.main .title h1 {
+		padding-left : 100px !important;
+		background-size : contain !important;
+	}
+}
+
+@media handheld {
+	#Base header.main .toolbar,
+	#Base header.main .toolbar .langItem {
+		font-family : 200% !important;
+	}
+
+	#Base header.main .title h1 {
+		font-size : 4em !important;
+	}
+
+	#Base footer.main {
+		font-size : 1em !important;
+	}
+}
+
+
+/*
+	Propriétés globales
+*/
+
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+	font-family : 'Roboto', sans-serif;
+}
+
+[v-cloak] {
+	display : none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight : 500;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type : none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a, a:hover, a:focus {
+	text-decoration : none;
+	color : #337ab7;
+}
+
+img {
+	display : block;
+	max-width : 100%;
+	height : auto;
+	margin : 0 auto;
+}
+
+html {
+	height : 100%;
+}
+
+body {
+	position : relative;
+	min-height : 100%;
+	background : #fff url("../picture/theme/wallpaper.png") no-repeat fixed center center;
+	background-size : cover;
+	font-size : 14px;
+	line-height : 1.42857143;
+}
+
+.flex {
+	display : flex;
+}
+
+.inline {
+	display : inline-block;
+	vertical-align : middle;
+}
+
+.fixed {
+	overflow : hidden;
+}
+
+.hidden, .responsive {
+	display : none;
+}
+
+h1.title {
+    margin: 0 0 20px 50px;
+    font-size: 3em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+	color: #9C7035;
+}
+
+
+/*
+	Entête
+*/
+
+#Base header.main .toolbar {
+	height : 30px;
+	text-align : right;
+	background-color : rgba(0, 0, 0, 0.9);
+}
+
+#Base header.main .toolbar .langItem {
+	width : 55px;
+	height : 30px;
+	padding : 5px;
+	text-align : center;
+	cursor : pointer;
+	user-select : none;
+}
+
+#Base header.main .toolbar .lang {
+	color : #C4C4C4;
+}
+
+#Base header.main .toolbar .lang.selected {
+	color : #3B3B3B;
+	background-color : #F3F3F3 !important;
+}
+
+#Base header.main .toolbar .lang:hover {
+	background-color : rgba(255, 255, 255, 0.2);
+}
+
+#Base header.main .toolbar .languages {
+	position : absolute;
+	top : 30px;
+	right : 0;
+	background-color : #F3F3F3;
+}
+
+#Base header.main .toolbar .languages > li {
+	color : black;
+}
+
+#Base header.main .toolbar .languages > li:hover {
+	background-color : #C4C4C4;
+}
+
+#Base header.main .title {
+	padding : 2% 0 2% 0;
+	text-align : center;
+	background : linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+}
+
+#Base header.main .title h1 {
+	display : inline-block;
+	margin : 0;
+	padding-left : 200px;
+	background : url("../picture/theme/logo.png") no-repeat left center;
+	font-size : 10em;
+	font-family : 'Questrial', sans-serif;
+	color : rgba(255, 255, 255, 0.85);
+	text-shadow : 0 0 15px #2E2E2E;
+	user-select : none;
+	cursor : default;
+}
+
+#Base header.main .title h1 .do {
+	display : inline-block;
+	padding-left : 5px;
+	border-bottom : 4px solid rgba(255, 255, 255, 0.4);
+}
+
+#Base header.main .title h1 .fensive {
+	display : inline-block;
+	padding-right : 5px;
+	border-top : 4px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/*
+	Pied de page
+*/
+
+#Base div.footerSpace {
+	height : 60px;
+}
+
+#Base footer.main {
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	width : 100%;
+	background-color : rgba(0, 0, 0, 0.65);
+	color : #FFF;
+	padding : 8px 10px;
+	font-size : 0.8em;
+	text-align : center;
+	text-shadow : 0 0 3px black;
+}
+
+#Base footer a, footer a:hover, footer a:focus {
+	font-weight : bolder;
+	color : #E1C281;
+}
+
+
+/*
+	Page flottante
+*/
+
+#Cache {
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100vw;
+	height : 100vh;
+	background : rgba(0, 0, 0, 0.7);
+	z-index : 99;
+}
+
+#Cache.fade-enter-active,
+#Cache.fade-leave-active {
+	transition: all .3s ease;
+}
+#Cache.fade-enter,
+#Cache.fade-leave-to {
+	opacity : 0;
+}
+
+#Page {
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 90%;
+	height : 90vh;
+	margin : 5vh 5%;
+	padding : 0 5px 10px 5px;
+	box-shadow : 0 4px 10px black;
+	background : white;
+	color : #262626;
+	overflow-y : auto;
+	z-index : 100;
+	word-break : normal;
+}
+
+#Page .padding {
+	padding : 10px;
+}
+
+#Page h2 {
+	display : inline-block;
+	margin : 0 0 10px 10px;
+	font-size : 3em;
+	font-family : 'Titillium Web', sans-serif;
+	font-variant : small-caps;
+	color : #925C27;
+}
+
+#Page p {
+	margin-bottom : 10px;
+}
+
+#Page #Close {
+	position : absolute;
+	right : 5px;
+	top : 5px;
+	width : 50px;
+	height : 25px;
+	background : linear-gradient(#1C1C1C, #0B0B0B, #1C1C1C);
+	text-align : center;
+	z-index : 101;
+	color : #FFF;
+	cursor : pointer;
+}
+
+#Page #Close:after {
+	line-height : 25px;
+	font-family : 'Roboto', sans-serif;
+	font-size : 1.1em;
+	content : "x";
+}
+
+#Page #Close:hover {
+	background : linear-gradient(#7D0A0A, #591414, #7D0A0A);
+}
+
+#Page .innerPage {
+	padding : 20px;
+	font-size : 1.075em;
+}
+
+#Page.drop-down-enter-active,
+#Page.drop-down-leave-active {
+	transition: all .6s ease;
+}
+#Page.drop-down-enter,
+#Page.drop-down-leave-to {
+	transform : translateY(-100px);
+	opacity : 0;
+}

@@ -1,0 +1,16 @@
+php_flag display_errors Off
+
+Options -Indexes
+RewriteEngine On
+ErrorDocument 403 /
+ErrorDocument 404 /
+ErrorDocument 500 /
+RewriteBase /
+FallbackResource /index.php
+
+#RewriteCond %{HTTP_HOST} ^dofensive\.000webhostapp\.com$ [NC]
+#RewriteRule ^(.*)$ http://dofensive.com [R=301,L]
+
+#RewriteCond %{REMOTE_ADDR} !^86\.220\.19\.121$
+#RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+#RewriteRule ^(.*)$ http://dofensive.com/maintenance.html [R=307,L]

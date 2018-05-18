@@ -1,0 +1,362 @@
+@media (max-width : 1200px) {
+	section.description table tr td.t1:first-child, section.description table tr td img {
+		display : none !important;
+	}
+
+	nav#domain .btn .default {
+		display : none !important;
+	}
+
+	nav#domain .btn .responsive {
+		display : inline !important;
+	}
+}
+
+@media (max-width : 1000px) {
+	section.description table tr td {
+		display : block !important;
+		width : 100% !important;
+		margin : 10px auto !important;
+	}
+
+	section.main .search input[type="button"] {
+		width : 30% !important;
+	}
+}
+
+@media handheld {
+	section.main #domain, section.main .autocompletion {
+		font-size : 125% !important;
+	}
+}
+
+section.main {
+	padding : 2.5% 0 4% 0;
+}
+
+section.main #domain {
+	position : relative;
+	width : 70%;
+	margin : 0 auto -4px auto;
+	padding-left : 20px;
+}
+
+section.main #domain > .btn {
+	position : relative;
+	display : inline-block;
+	margin-left : 15px;
+	padding : 8px 15px 8px 15px;
+	border-left : 4px solid #222;
+	border-top : 4px solid #222;
+	border-right : 4px solid #222;
+	border-radius : 10px 10px 0 0;
+	font-size : 1.4em;
+	font-family : Calibri, sans-serif;
+	font-weight : bolder;
+	font-variant : small-caps;
+	background : #616161;
+	color : #D9D9D9;
+	user-select : none;
+}
+
+section.main #domain > .btn:not(.selected) {
+	cursor : pointer;
+}
+
+section.main #domain > .btn.selected {
+	background : white;
+	color : #9C7035;
+	z-index : 2;
+	cursor : default;
+}
+
+section.main #domain > .btn:not(.selected):hover {
+	background : white;
+	color : #555;
+	z-index : 2;
+}
+
+section.main .foreground {
+	position : relative;
+	z-index : 1;
+}
+
+section.main .search {
+	display : flex;
+	width : 80%;
+	margin : 0 auto;
+	background : white;
+	border-radius : 5px;
+	border : 4px solid rgba(20, 20, 20, 0.9);
+	box-shadow : 0 0 20px 0 rgba(255, 255, 255, 0.5);
+	font-family : 'Titillium Web', sans-serif;
+}
+
+section.main .search .list {
+	display : block;
+}
+
+section.main .search .list .selectedItem {
+	display : inline-block;
+	margin : 5px;
+	padding : 2px 5px 4px 8px;
+	border-radius : 6px;
+	background : #DCDCDC;
+	font-size : 1.2em;
+	color : rgba(33, 33, 33, 0.6);
+	cursor : pointer;
+	user-select : none;
+}
+
+section.main .search .list .selectedItem:after {
+	content : '\2A2F';
+	margin-left : 5px;
+	font-size : 1.3em;
+	color : #890000;
+	opacity : 0.7;
+}
+
+section.main .search .list .selectedItem:hover {
+	color : rgba(33, 33, 33, 0.8);
+}
+
+section.main .search .list .selectedItem:hover:after {
+	opacity : 1;
+}
+
+section.main .search .icon {
+	width : 50px;
+	margin : 5px;
+	background : transparent url('/picture/theme/search.svg') no-repeat center;
+	background-size : contain;
+}
+
+section.main .search .field:not(.selected) {
+	display : none;
+}
+
+section.main .search .field {
+	width : 100%;
+	padding : 5px;
+}
+
+section.main .search .field .input {
+	display : flex;
+}
+
+section.main .search .field input {
+	width : 100%;
+	padding : 10px 5px;
+	border : none;
+	font-size : 2.5em;
+	outline : none;
+}
+
+section.main .search input[type="button"] {
+	display : inline-block;
+	width : 10%;
+	margin : 8px;
+	padding : 0 5px;
+	background-color : #B08957;
+	border-radius : 2px;
+	border : none;
+	font-size : 2em;
+	font-weight : bolder;
+	color : #FFF;
+	cursor : pointer;
+	transition : background-color 250ms;
+}
+
+section.main .search input[type="button"]:hover {
+	background-color : #CE9437;
+	color : #FFF;
+}
+
+section.main .autocompletion {
+	position : relative;
+	top : -5px;
+	width : 80%;
+	max-height : 300px;
+	margin : 0 auto;
+	padding : 2px 5px;
+	border-left : 4px solid rgba(20, 20, 20, 0.9);
+	border-bottom : 4px solid rgba(20, 20, 20, 0.9);
+	border-right : 4px solid rgba(20, 20, 20, 0.9);
+	border-radius : 0 0 5px 5px;
+	background-color : white;
+	overflow-y : auto;
+}
+
+section.main .autocompletion li {
+	padding : 8px 15px;
+	font-size : 1.2em;
+}
+
+section.main .autocompletion li {
+	border-top : 1px solid #ccc;
+}
+
+section.main .autocompletion li .type {
+	width : 20px;
+	background-position : center;
+	background-repeat : no-repeat;
+	background-size : contain;
+}
+
+section.main .autocompletion li .type[data-type="3"] {
+	background-image : url('/picture/theme/boss.png');
+}
+
+section.main .autocompletion li .type[data-type="2"] {
+	background-image : url('/picture/theme/archi.png');
+}
+
+section.main .autocompletion li .type[data-type="1"] {
+	background-image : url('/picture/theme/quest.png');
+}
+
+section.main .autocompletion li .name {
+	margin-left : 15px;
+}
+
+section.main .autocompletion li .level {
+	margin-left : auto;
+	font-family : Calibri, sans-serif;
+	color : #878787;
+}
+
+section.main .autocompletion li:not(.noresult):nth-child(even) {
+	background-color : #FAFAFA;
+}
+
+section.main .autocompletion li.selected {
+	background : #212121 !important;
+	color : #FFF;
+	cursor : pointer;
+}
+
+section.description table {
+	width : 100%;
+	border-spacing : 80px 0;
+	border-collapse : separate;
+}
+
+section.description table tr td:not(.t2) {
+	text-align : justify;
+	text-align-last : center;
+	font-size : 1.3em;
+}
+
+section.description table tr td.t1 {
+	width : 30%;
+	padding : 10px;
+	background : rgba(255, 255, 255, 0.75);
+}
+
+section.description table tr td.middlePadding {
+	padding : 20px 0;
+}
+
+section.description table tr td.t2 {
+	width : 40%;
+}
+
+section.description table tr td .partner {
+	position : relative;
+	display : block;
+	width : 100%;
+	height : 180px;
+	text-align : center;
+	opacity : 0.9;
+	overflow : hidden;
+	user-select : none;
+	transition : opacity .3s ease;
+}
+
+section.description table tr td .partner:hover {
+	opacity : 0.95;
+}
+
+section.description table tr td .partner:nth-child(2) {
+	margin : 40px 0;
+}
+
+section.description table tr td .partner .item {
+	display : inline-block;
+	line-height : 180px;
+	padding-left : 140px;
+	font-size : 4em;
+	background-position : left center;
+	background-repeat : no-repeat;
+}
+
+section.description table tr td .partner .description {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+	padding : 6px 10px;
+	text-align : center;
+	background : rgba(0, 0, 0, 0.35);
+	font-size : 0.8em;
+	font-style : oblique;
+	color : #FFF;
+}
+
+section.description table tr td .partner .description.slide-fade-enter-active,
+section.description table tr td .partner .description.slide-fade-leave-active {
+	transition: all .3s ease;
+}
+section.description table tr td .partner .description.slide-fade-enter,
+section.description table tr td .partner .description.slide-fade-leave-to {
+	transform : translateY(10px);
+	opacity : 0;
+}
+
+section.description table tr td .partner.domage {
+	background-color : rgb(148, 98, 121);
+	color : #431229;
+}
+
+section.description table tr td .partner.domage .item {
+	background-image : url('/picture/theme/DoMage.png');
+}
+
+section.description table tr td .partner.skiney {
+	background-color : rgb(98, 128, 148);
+	color : #0d2d42;
+}
+
+section.description table tr td .partner.skiney .item {
+	background-image : url('/picture/theme/Skiney.png');
+}
+
+section.description table tr td .partner.other {
+	background-color : rgb(164, 147, 78);
+	color : #4d3105;
+}
+
+section.description table tr td .partner.other .item {
+	background-image : url('/picture/theme/Other.png');
+}
+
+section.description table tr td .number {
+	display : inline-block;
+	font-size : 4em;
+	font-weight : bolder;
+	font-family : 'Titillium Web', sans-serif;
+}
+
+section.description table tr td .sub {
+	margin : 20px;
+}
+
+section.description table tr td:not(:first-child) .sub p {
+	margin : 0 7px;
+	padding : 5px 10px;
+	border-left : 1px solid grey;
+}
+
+section.description table tr td .sub .version {
+	text-align : left;
+	text-align-last : left;
+}

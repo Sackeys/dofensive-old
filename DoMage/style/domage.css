@@ -1,0 +1,159 @@
+	* {
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+
+body {
+	background : transparent url('../picture/theme/wallpaper.png') no-repeat center center fixed;
+	background-size : cover;
+	font-family : Calibri, sans-serif;
+	overflow : hidden;
+}
+
+header {
+	position : fixed;
+	width : 100%;
+	background : #1A1A1A;
+	padding : 10px 10px 5px 10px;
+	z-index : 2;
+	user-select : none;
+}
+
+header a {
+	display : inline-block;
+	width : 40px;
+	height : 40px;
+	background : transparent url('../picture/theme/back.svg') no-repeat center center;
+	background-size : contain;
+	opacity : 0.6;
+	transition : opacity 0.25s;
+}
+
+header a:hover {
+	opacity : 1;
+	transition : opacity 0.25s;
+}
+
+header h1 {
+	display : inline-block;
+	line-height : 40px;
+	margin-left : 25px;
+	color : #946279;
+	text-shadow : 1px 1px 2px black;
+	vertical-align : top;
+}
+
+header #options {
+	display : inline-block;
+	line-height : 40px;
+	float : right;
+	color : #C4C4C4;
+	font-size : 1.2em;
+}
+
+header #options > div {
+	display : inline-block;
+	margin : 0 20px;
+}
+
+#global {
+	position : relative;
+	top : 60px;
+	height : calc(100vh - 60px);
+	overflow : auto;
+}
+
+.domain {
+	display : flex;
+}
+
+.division {
+	display : inline-block;
+}
+
+h2.division {
+	display : block;
+	width : 1.8em;
+	margin : 20px 0 20px 15px;
+	padding : 5px 6px;
+	text-align : center;
+	writing-mode : vertical-rl;
+	transform : rotate(180deg);
+	background : rgba(104, 0, 69, 0.25);
+	color : #131313;
+	letter-spacing : 2px;
+}
+
+.group {
+	padding : 10px;
+}
+
+.container {
+	margin : 5px;
+	padding : 3px;
+	background : rgba(255, 255, 255, 0.4);
+}
+
+.name {
+	display : none;
+	text-align : center;
+	font-size : 0.9em;
+}
+
+.preview {
+	display : none;
+	width : 70px;
+	height : 70px;
+	border : 2px inset;
+	border-top-color : #b1ac9c;
+	border-right-color : #c9c6bb;
+	border-bottom-color : #dfdbcd;
+	border-left-color : #c9c6bb;
+	background : #FFF url('../picture/theme/background.jpg') center no-repeat;
+}
+
+.preview .picture {
+	width : 100%;
+	height : 100%;
+	border : 10px solid transparent;
+	background-position : center;
+	background-size : contain;
+	background-repeat : no-repeat;
+}
+
+.description {
+	font-size : 0.8em;
+}
+
+.description .icon  {
+	background-repeat : no-repeat;
+	background-position : left center;
+	background-size : 25%;
+	margin : 2px 5px;
+	padding-left : 22px;
+	text-align : right;
+	font-size : 1.25em;
+	font-weight : bold;
+}
+
+.description .weight {
+	background-image : url('../picture/theme/weight.svg');
+}
+
+.description .optimal {
+	display : none;
+	background-image : url('../picture/theme/optimal.svg');
+}
+
+/*
+	Remove webhost ads
+*/
+#DoMage + div {
+	display : none !important;
+	width : 0 !important;
+	height : 0 !important;
+	visibility : hidden !important;
+	opacity : 0 !important;
+	z-index : -1 !important;
+}

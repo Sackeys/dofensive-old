@@ -1,0 +1,43 @@
+#map {
+	display : none;
+	width : 60%;
+	margin : 0 auto;
+	border : 1px solid red;
+}
+
+#DoMap {
+	cursor : default;
+}
+
+#DoMap .cell.target {
+	fill : #A65555 !important;
+}
+
+#DoMap .cell.spell {
+	fill : blue !important;
+}
+
+#DoMap .cell.focus {
+	fill : #853131 !important;
+}
+
+#DoMap .cell {
+	fill : #000;
+	stroke : #76725b;
+	stroke-width : 1;
+}
+
+#DoMap .cell.ground[data-parity='0'] {
+	fill : #8e865e;
+}
+
+#DoMap .cell.ground[data-parity='1'] {
+	fill : #968e67;
+}
+
+#DoMap .face {
+	fill : rgba(88, 83, 58, 0.9);
+	stroke : rgba(255, 255, 255, 0.5);
+	stroke-width : 1;
+	pointer-events : none;
+}
