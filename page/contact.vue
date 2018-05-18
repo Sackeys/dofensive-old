@@ -5,7 +5,7 @@
             {{ Text.Contact.Text }}
         </p>
         <section class="ways">
-            <a class="contactLink discord" href="https://discord.gg/Z8uRcrb" target="_blank" @click="GaFor('Discord')">
+            <a class="contactLink discord" href="https://discord.gg/DqKfNAC" target="_blank" @click="GaFor('Discord')">
                 <div class="inline"><img src="/picture/theme/discord.png" :alt="Text.Common.Discord" /></div>
                 <div class="name inline">{{ Text.Common.Discord }}</div>
             </a>
